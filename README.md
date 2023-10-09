@@ -557,6 +557,7 @@ Node.js is commonly used for building web servers, APIs, real-time applications,
 
 # Code for creating node.js sever 
 
+<script>
 
 const http = require('http'); 
 const hostname = '127.0.0.1'; 
@@ -572,38 +573,31 @@ const server = http.createServer((req, res) => {
 server.listen(port, hostname, () => { 
   console.log(`Server running at http://${hostname}:${port}/`); 
 }); 
-
- 
+	
+ </script>
 
 ## Answers to Activity 3 
 
 What is Node JS? 
-
 =Node.js is an open source server environment 
 
 How is Node JS initiated on a computer? 
-
 =Through the command line interface 
 
 Why do we use Node JS? 
-
 =Node JS is asynchronous 
 
 What can Node JS do? 
-
 =Node JS can send dynamic content  
 Node JS contains some tasks that can be executed on certain events eg someone trying to access a port on the server 
 
 What is a module in Node JS the same as in JavaScript? 
-
 =Libraries.  
 
 What is NPM? 
-
 =Node JS Package Manager 
 
 What is contained  in a Node JS Package? 
-
 =A package in Node.js contains all the files you need for a module 
 
 
