@@ -527,20 +527,83 @@ The server reads form data and the file, as if it were a regular form submission
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# Week 3 = Node JS
 
 # Week 3: Intro to Node JS  Day 1 – Introduction to Node JS  What is Node JS? 
 
 Google chrome's V8 – JavaScript engine  
 
 	Listen to network traffic  
-
 	Access files on your local 
-
  	Listen to http 
-
 	Send back files 
-
 	Access databases 
+ 
+Node.js is an open-source, cross-platform JavaScript runtime environment that allows developers to execute JavaScript code outside of a web browser. 
+It is built on the V8 JavaScript engine developed by Google and is designed to be efficient and lightweight, making it well-suited for building scalable and high-performance network applications. 
+
+Key features and characteristics of Node.js include: 
+
+Non-blocking I/O: Node.js is designed around an event-driven, non-blocking I/O model, which means that it can handle a large number of simultaneous connections and perform tasks asynchronously. This makes it particularly suitable for building real-time applications like chat applications or online gaming. 
+
+Server-side scripting: Node.js is often used for server-side scripting, enabling developers to build web servers and APIs using JavaScript. This allows for a consistent language and codebase between the server and the client, which can simplify development and maintenance. 
+
+Package ecosystem: Node.js has a vibrant ecosystem of open-source packages and modules available through the Node Package Manager (NPM). NPM makes it easy to manage dependencies and integrate third-party libraries into your projects. 
+
+Community and support: Node.js has a large and active community of developers, which means there is a wealth of documentation, tutorials, and support available for those working with Node.js. 
+
+Cross-platform: Node.js is compatible with various operating systems, including Windows, macOS, and various Linux distributions, making it a versatile choice for building applications that can run on different platforms. 
+
+Node.js is commonly used for building web servers, APIs, real-time applications, and microservices. It has gained popularity in recent years due to its performance, scalability, and the ability to use JavaScript for both client-side and server-side development, making it a powerful tool for full-stack developers. 
+
+# Code for creating node.js sever 
+
+
+const http = require('http'); 
+const hostname = '127.0.0.1'; 
+const port = 3000; 
+
+const server = http.createServer((req, res) => { 
+
+  res.statusCode = 200; 
+  res.setHeader('Content-Type', 'text/plain'); 
+  res.end('Hello World\n'); 
+}); 
+
+server.listen(port, hostname, () => { 
+  console.log(`Server running at http://${hostname}:${port}/`); 
+}); 
+
+ 
+
+## Answers to Activity 3 
+
+What is Node JS? 
+
+=Node.js is an open source server environment 
+
+How is Node JS initiated on a computer? 
+
+=Through the command line interface 
+
+Why do we use Node JS? 
+
+=Node JS is asynchronous 
+
+What can Node JS do? 
+
+=Node JS can send dynamic content  
+Node JS contains some tasks that can be executed on certain events eg someone trying to access a port on the server 
+
+What is a module in Node JS the same as in JavaScript? 
+
+=Libraries.  
+
+What is NPM? 
+
+=Node JS Package Manager 
+
+What is contained  in a Node JS Package? 
+
+=A package in Node.js contains all the files you need for a module 
 
 
