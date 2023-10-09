@@ -524,3 +524,23 @@ formData.append("image", imageBlob, "image.png");
 That’s same as if there were <input type="file" name="image"> in the form, and the visitor submitted a file named "image.png" (3rd argument) with the data imageBlob (2nd argument) from their filesystem.
 
 The server reads form data and the file, as if it were a regular form submission.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Week 3 = Node JS
+
+# Week 3: Intro to Node JS  Day 1 – Introduction to Node JS  What is Node JS? 
+
+Google chrome's V8 – JavaScript engine  
+
+	Listen to network traffic  
+
+	Access files on your local 
+
+ 	Listen to http 
+
+	Send back files 
+
+	Access databases 
+
+
